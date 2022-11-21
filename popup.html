@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <output id="hdr">Volume Booster</output>
+    <p></p>
+    <p></p>
+    <div class="sliderContainer">
+        <input type="range" min="0" max="500" class="slider" id="volumeSlider">
+        <output id="output">Volume: 100%</output>
+    </div>
+
+    <button id="confirmButton">Confirm</button>
+    <br>
+    <button id="resetButton">Reset to 100%</button>
+
+    <br>
+    <output id="confirmMessage"></output>
+
+    <footer class="footer">
+
+        <!-- Review stars -->
+        <div class="stars js-stars">
+          <a class="stars__star-wrapper js-stars__star" target="_blank" data-action="support"></a>
+          <a class="stars__star-wrapper js-stars__star" target="_blank" data-action="support"></a>
+          <a class="stars__star-wrapper js-stars__star" target="_blank" data-action="review"></a>
+          <a class="stars__star-wrapper js-stars__star" target="_blank" data-action="review"></a>
+          <a class="stars__star-wrapper js-stars__star" target="_blank" data-action="review"></a>
+        </div>
+      
+      
+        <!-- Made by -->
+        <div>
+    Made with
+          <span class="footer__heart js-heart">♥</span>
+          by
+          <a class="link link--external js-footer-link" tabindex="-1" target="_blank" href="https://github.com/mahsusabeg">
+            Mahsûsa
+          </a>
+        </div>
+      </footer>
+
+    <script src="popup.js"></script>
+</body>
+
+
+</html>

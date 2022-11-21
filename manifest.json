@@ -1,0 +1,28 @@
+{
+  "name": "Volume Booster",
+  "description": "For boosting the volume of YouTube videos.",
+  "version": "1.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": ["<all_urls>"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "icons": {
+    "16": "icons/musicicon16.png",
+    "64": "icons/musicicon64.png",
+    "128": "icons/musicicon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
